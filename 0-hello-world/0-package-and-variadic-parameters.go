@@ -3,9 +3,9 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Hello everyone, this is the most interesting course on the earth")
+	n, _ := fmt.Println("Hello everyone, this is the most interesting course on the earth")
 	foo()
-	fmt.Println("Something more...")
+	fmt.Println("Something more...", n)
 
 	for i := 0; i < 100; i++ {
 		if i%2 == 0 {
@@ -13,6 +13,7 @@ func main() {
 		}
 	}
 
+	fmt.Println(n)
 	bar()
 }
 
